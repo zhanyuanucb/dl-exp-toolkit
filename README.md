@@ -1,6 +1,6 @@
 # Deep Learning Experiment Toolkit
-Tools helping you set up deep learning experiments in a second  
-_Acknowledgement:_ This toolkit is mainly modified from https://github.com/tribhuvanesh/knockoffnets/tree/master/knockoff
+Provides infrastructure to help you set up deep learning experiments in a second so that you focus on implementing your own idea.  
+_Acknowledgement:_ This toolkit is mainly adapted and modified from https://github.com/tribhuvanesh/knockoffnets/tree/master/knockoff
 
 ### Usage & Explanations
 - _config.py_: Configuration file for setting:
