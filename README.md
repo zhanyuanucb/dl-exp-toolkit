@@ -1,5 +1,6 @@
 # Deep Learning Experiment Toolkit
 Tools helping you set up deep learning experiments in a second
+_Acknowledgement:_ This toolkit is mainly modified from https://github.com/tribhuvanesh/knockoffnets/tree/master/knockoff
 
 ### Usage & Explanations
 - _config.py_: Configuration file for setting:
@@ -9,7 +10,14 @@ Tools helping you set up deep learning experiments in a second
     
 - _model_utils.py_: Training and evaluation functions that are capable to:
     - Create log file for training and testing
-    - Create informative checkpoint
+    - Create informative checkpoint. 
+    - Checkpoint struction:
+        - epoch
+        - arch
+        - state_dict
+        - best_test_acc
+        - optimizer
+        - created_on
     
 - _datasets_: Manage all the datasets and corresponding default transformations durint training and testing. Current available datasets:
     - MNIST
@@ -52,4 +60,13 @@ model = zoo.get_net(model_name, modelfamily, num_classes=num_classes, pretrained
 modelfamily = datasets.dataset_to_modelfamily[dataset_name]
 dataset = datasets.__dict__[dataset_name]
 
+```
+
+```
+# Load model checkpoint
+checkpoint = torch.load(model_path)
+start_epoch = checkpoint["epoch"]
+best_test_acc = checkpoint["best_acc"]
+model.load_state_dict(checkpoint["state_dict"])
+optimizer.load_state_dict(checkpoint["optimizer"])
 ```
