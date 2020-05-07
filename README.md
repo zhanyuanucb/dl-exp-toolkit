@@ -1,5 +1,5 @@
 # Deep Learning Experiment Toolkit
-Tools helping you set up deep learning experiments in a second
+Tools helping you set up deep learning experiments in a second  
 _Acknowledgement:_ This toolkit is mainly modified from https://github.com/tribhuvanesh/knockoffnets/tree/master/knockoff
 
 ### Usage & Explanations
