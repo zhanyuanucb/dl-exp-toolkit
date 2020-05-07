@@ -1,5 +1,5 @@
 # Deep Learning Experiment Toolkit
-Provides infrastructure to help you set up deep learning experiments in a second so that you focus on implementing your own idea.  
+Provides infrastructure to help you set up deep learning experiments in a second.  
 _Acknowledgement:_ This toolkit is mainly adapted and modified from https://github.com/tribhuvanesh/knockoffnets/tree/master/knockoff
 
 ### Usage & Explanations
